@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff0f5;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #ff69b4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1 {
+            color: #8b0000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Admin Page</h1>
+    <p>Welcome, administrator!</p>
+    <a href="/">Home</a>
+    <a th:href="@{/logout}" style="color: white;">Logout</a>
+</div>
+</body>
+</html>
